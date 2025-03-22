@@ -8,7 +8,7 @@ if Target in Names:
 else:
     print(f"Oops! {Target} not found in the list")
 
-#Optional requiremnets
+#Optional requirements
 #Allow the user to input the search
 Target=input("Search for a name!")
 #Check if the name is present or not
