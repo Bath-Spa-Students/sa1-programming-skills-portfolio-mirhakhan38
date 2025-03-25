@@ -5,4 +5,4 @@ my_data={
     "Hometown": "Karachi",
 }
 #printing values on separate lines using a single print() statement
-print(*my_data, sep="\n")
+print("\n" + "\n" )
