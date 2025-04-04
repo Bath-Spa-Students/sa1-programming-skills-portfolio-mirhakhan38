@@ -1,21 +1,25 @@
 #Dictionary of 10 European countries and their capitals 
-question={
-    "Belarus":"Minsk",
+quiz = {
+     "Belarus":"Minsk",
     "Austria" : "Vienna",
-"Switzerland":"Bern",
-"Serbia" : "Belgrade",
-"Bulgaria" : "Sofia",
-"Denmark" : "Copenhagen",
-"Slovakia" : "Bratislava",
-"Finland" : "Helsinki",
-"Ireland" : "Dublin",
-"Croatia" :"Zagreb",
+    "Switzerland":"Bern",
+    "Serbia" : "Belgrade",
+    "Bulgaria" : "Sofia",
+    "Denmark" : "Copenhagen",
+    "Slovakia" : "Bratislava",
+    "Finland" : "Helsinki",
+    "Ireland" : "Dublin",
+    "Croatia" :"Zagreb",
+
 }
-    
+
+# Step 2: Iterate through the countries and ask questions
+for country, correct_capital in quiz.items():
 #asking questions
-for country, capital in question.items():
-    answer=input(f"What is the Capital of {country}?").strip().lower()
-if answer==capital.lower():
-    print(f"Correct! The capital of {country} is {capital}.")
-else: 
-    print(f"Wrong! The correct answer is {capital}.")
+    answer = input(f"What is the capital of {country}? ").strip().lower()
+    
+    # Check if the answer is correct
+    if answer == correct_capital.lower():
+        print("Correct!")
+    else:
+        print(f"Wrong! The correct answer is {correct_capital}.")
