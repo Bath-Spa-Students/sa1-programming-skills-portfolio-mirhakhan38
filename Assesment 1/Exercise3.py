@@ -4,5 +4,5 @@ my_data={
     "Age": 18,
     "Hometown": "Karachi",
 }
-#printing values on separate lines using a single print() statement
-print("\n" + "\n" )
+# printing the biography
+print(f"Name: {my_data['Name']}\nAge: {my_data['Age']}\nHometown: {my_data['Hometown']}")
