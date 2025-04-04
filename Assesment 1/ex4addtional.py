@@ -13,7 +13,6 @@ quiz = {
 
 }
 
-# Step 2: Iterate through the countries and ask questions
 for country, correct_capital in quiz.items():
 #asking questions
     answer = input(f"What is the capital of {country}? ").strip().lower()
